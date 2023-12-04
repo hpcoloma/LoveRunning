@@ -161,6 +161,34 @@ main {
     justify-content: center;
 }
 
+/*Meet up times section */
+#times {
+    background: url('/images/dublin-city.webp') no-repeat center/cover;
+    /* Handles responsivity without the need for a media query */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#times div {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 15px;
+    text-align: center;
+    /* This will not wrap on screens of less than 400px wide.
+    Each div will ecpand to fill the available space on it row */
+    flex-basis: 200px;
+    flex-grow: 1;
+    /*Creates a grid of meetup time dives over the background image*/
+    border: 2px solid white;
+
+}
+
+#times h3 {
+    /*override the heading color set in general style*/
+    color: #fafafa;
+}
+
+
 /* Footer */
 #social-networks {
     text-align: center;
@@ -236,41 +264,41 @@ main {
         align-self: flex-end;
     }
 
-}
 
-/* Large devices*/
-@media screen and (min-width: 992px) {
-    #menu a:hover {
-        border-bottom: 1px solid #3a3a3a;
-    }
-}
 
-@media screen and (min-width: 1200px) {
-
-    /*Reasons Section */
-    #benefits {
-        display: flex;
-        flex-direction: row;
+    /* Large devices*/
+    @media screen and (min-width: 992px) {
+        #menu a:hover {
+            border-bottom: 1px solid #3a3a3a;
+        }
     }
 
-    #benefits>div {
-        flex: 1;
-    }
+    @media screen and (min-width: 1200px) {
 
-    #benefits-image {
-        order: 0
-    }
+        /*Reasons Section */
+        #benefits {
+            display: flex;
+            flex-direction: row;
+        }
 
-    #benefits-mental {
-        order: 1;
-    }
+        #benefits>div {
+            flex: 1;
+        }
 
-    #benefits-mental>div {
-        align-self: flex-start;
-    }
+        #benefits-image {
+            order: 0
+        }
 
-    #benefits-physical>div {
-        align-self: flex-end;
-    }
+        #benefits-mental {
+            order: 1;
+        }
 
-}
+        #benefits-mental>div {
+            align-self: flex-start;
+        }
+
+        #benefits-physical>div {
+            align-self: flex-end;
+        }
+
+    }
