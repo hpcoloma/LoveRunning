@@ -314,15 +314,13 @@ main {
     }
 
     /*Reasons section*/
-    #benefits-physical,
-    #benefits-mental {
+    #benefits-physical, #benefits-mental {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
 
-    #benefits-physical>div,
-    #benefits-mental>div {
+    #benefits-physical>div, #benefits-mental>div {
         width: 75%;
     }
 
@@ -351,13 +349,13 @@ main {
 
     .text-input:hover {
         border-color: #f16c6b;
-
     }
 
     .join-button:hover {
         background-color: #fafafa;
         color: #454b1b;
     }
+}
 
     /* Large devices*/
     @media screen and (min-width: 992px) {
