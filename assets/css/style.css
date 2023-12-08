@@ -182,7 +182,7 @@ main {
     padding: 15px;
     text-align: center;
     /* This will not wrap on screens of less than 400px wide.
-    Each div will ecpand to fill the available space on it row */
+    Each div will expand to fill the available space on it row */
     flex-basis: 200px;
     flex-grow: 1;
     /*Creates a grid of meetup time dives over the background image*/
@@ -376,7 +376,7 @@ main {
 
          /*Gallery style*/
          #photos {
-        column-count: 4;
+            column-count: 4;
         }
     }
 
